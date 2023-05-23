@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda en línea</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2e83c9;
+    }
+
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      width: 250px;
+      margin: 20px;
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+    }
+
+    .add-to-cart {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #0056b3;
+    }
+
+    .payment-methods {
+      text-align: center;
+    }
+
+    .payment-methods ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .payment-methods li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tienda en línea</h1>
+  </header>
+  
+  <div class="container">
+    <section class="products">
+      <h2>Productos</h2>
+      <div class="product">
+        <img src="product1.jpg" alt="Producto 1">
+        <h3>Producto 1</h3>
+        <p>Descripción del producto 1.</p>
+        <p class="price">$10.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      
+      <div class="product">
+        <img src="product2.jpg" alt="Producto 2">
+        <h3>Producto 2</h3>
+        <p>Descripción del producto 2.</p>
+        <p class="price">$15.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </section>
+    
+    <section class="payment-methods">
+      <h2>Métodos de Pago</h2>
+      <ul>
+        <li><img src="paypal.png" alt="PayPal"></li>
+        <li><img src="visa.png" alt="Visa"></li>
+        <li><img src="mastercard.png" alt="MasterCard"></li>
+      </ul>
+    </section>
+  </div>
+  
+  <footer>
+    <p>Todos los derechos reservados &copy; 2023</p>
+  </footer>
+</body>
+</html>
